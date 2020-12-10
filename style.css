@@ -1,0 +1,42 @@
+body {
+    background-image: url(/image/unsplash-nasa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#inputContainer {
+    display: flex;
+    justify-content: center;
+    position: relative; top: 30px;
+}
+
+#dateInput {
+    width: 15vw;
+    height: 5vh;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin-right: 10px;
+    border-radius: 10px;
+    color: grey;
+}
+
+button {
+    background-color: rgba(128, 128, 128, 0.3);
+    margin-right: 3px;
+    width: 5vw;
+    border-radius: 50px;
+    border-width: 1px;
+    color: grey;
+    
+}
+button:hover {
+    width: 5.5vw;
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 36px;
+    color: white;
+}
