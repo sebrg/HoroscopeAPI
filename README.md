@@ -1,0 +1,2 @@
+# HoroscopeAPI
+Schoolproject
