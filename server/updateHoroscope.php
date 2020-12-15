@@ -15,6 +15,7 @@ include "./addHoroscope.php";
                   
                     $myHoroscope = dateToZodiac($_POST["date"]); 
                     $_SESSION["date"] = serialize($myHoroscope); 
+                    
                     echo json_encode(true); 
                 }  
         }

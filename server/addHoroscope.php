@@ -7,6 +7,7 @@ session_start(); //Session, som localstorage ungefär...
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
                 
                 //Request method is POST
+                
             if($_POST["date"] == null) { //Tar bort session om datum är fel.
                 session_abort();
         }
