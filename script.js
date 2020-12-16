@@ -48,9 +48,16 @@ async function updateHoroscope() {
     let hsContainer = document.getElementById("container") 
     let body = new FormData()
     body.set("date", dateInput)
-    await makeRequest("./server/updateHoroscope.php", "POST", body)
+    let updateRequest = await makeRequest("./server/updateHoroscope.php", "POST", body)
 
-    hsContainer.innerText = getHoroscope() //printar horoskop
+    if(updateRequest === true) {
+        hsContainer.innerText = getHoroscope()
+    }
+
+        else {
+            hsContainer.innerText = "There is no session to update."
+        }
+
 }
 
 
@@ -64,6 +71,6 @@ async function makeRequest(path, method, body) { //Tar in 3 parametrar.
         return await response.json()
     }   
         catch(e) {
-        console.log(e) 
+        console.error("Couldnt fetch") 
     }
 }
