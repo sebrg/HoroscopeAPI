@@ -14,7 +14,7 @@ session_start(); //Session, som localstorage ungefär...
 
                 if(isset($_POST["date"])) {
                    
-                    if(!isset($_SESSION["date"])) {
+                    if(!isset($_SESSION["date"])) { //Går endast att spara om det inte finns session.
 
                         $myHoroscope = dateToZodiac($_POST["date"]);
                         $_SESSION["date"] = serialize($myHoroscope); 

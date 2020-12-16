@@ -49,7 +49,7 @@ async function updateHoroscope() {
     let body = new FormData()
     body.set("date", dateInput)
     await makeRequest("./server/updateHoroscope.php", "POST", body)
-      
+
     hsContainer.innerText = getHoroscope() //printar horoskop
 }
 

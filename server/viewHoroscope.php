@@ -3,7 +3,7 @@
 
 session_start();
 
-    include "./addHoroscope.php";
+    include "./horoscopeFunction.php";
 
         if(isset($_SERVER['REQUEST_METHOD'])) {
 

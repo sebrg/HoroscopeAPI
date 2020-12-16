@@ -2,13 +2,14 @@
 
 session_start();
 
-include "./addHoroscope.php";
+include "./horoscopeFunction.php";
 
     if(isset($_SERVER['REQUEST_METHOD'])) {
 
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
             
-            //Request method is GET
+            //Request method is Post
+
             if(isset($_POST["date"])) {
 
                 if(isset($_SESSION["date"])) { 
